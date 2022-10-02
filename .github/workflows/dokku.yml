@@ -30,5 +30,5 @@ jobs:
         uses: idoberko2/dokku-deploy-github-action@v1
         with:
             ssh-private-key: ${{ secrets.DOKKU_SSH_KEY }}
-            dokku-host: 'meira-filmes.ip-172-31-27-172.us-east-2.compute.internalmeira-filmes.ip-172-31-27-172.us-east-2.compute.internal'
+            dokku-host: 'meira-filmes.ip-172-31-27-172.us-east-2.compute.internal'
             app-name: 'meira-filmes'
