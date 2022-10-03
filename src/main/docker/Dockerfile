@@ -7,7 +7,7 @@
 #
 # Then, build the image with:
 #
-# docker build -f src/main/docker/Dockerfile.jvm -t quarkus/meira-filmes-jvm .
+# docker build -f src/main/docker/Dockerfile -t quarkus/meira-filmes-jvm .
 #
 # Then run the container using:
 #
