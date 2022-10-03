@@ -15,10 +15,9 @@ jobs:
         uses: actions/checkout@master
       - run: ls -la
       - name: Download the binary
-        uses: actions/download-artifact@v1
+        uses: actions/download-artifact@v3
         with:
-          name: build
-          path: build
+          name: app
       - name: Dockerize
         id: dockerize
         uses: maxday/quarkus-dockerize-action@master
