@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Checkout the code
         uses: actions/checkout@master
-      - name: Build native executable
+      - name: Build a Quarkus native application
         uses: maxday/quarkus-native-build-docker-action@1
         with:
           outputName: app-runner
