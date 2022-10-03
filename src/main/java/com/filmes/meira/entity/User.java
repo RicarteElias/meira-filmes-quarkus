@@ -64,4 +64,5 @@ public class User extends PanacheEntityBase {
     public void setSenha(String senha) {
         this.senha = senha;
     }
+
 }
