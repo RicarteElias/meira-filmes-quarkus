@@ -5,7 +5,7 @@ on: [push]
 jobs:
   native_build:
     runs-on: ubuntu-latest
-    name: Build native Quarkus app
+    name: Build Quarkus app
     steps:
       - name: Checkout the code
         uses: actions/checkout@master
