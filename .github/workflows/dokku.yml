@@ -3,7 +3,7 @@ name: Deploy to Dokku - production
 on: [push]
 
 env:
-  DOKKU_HOST: 'dokku.me'
+  DOKKU_HOST: 'http://ip-172-31-39-50.us-east-2.compute.internal'
   DOKKU_APP_NAME: 'meira-filmes'
   DOKKU_REMOTE_BRANCH: 'master'
 
