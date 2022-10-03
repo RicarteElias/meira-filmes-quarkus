@@ -18,6 +18,7 @@ jobs:
         run: chmod +x ./gradlew
       - name: Execute Gradle build
         run: ./gradlew build
+      - run: ls -la
       - name: Upload native executable
         uses: actions/upload-artifact@v1
         with:
