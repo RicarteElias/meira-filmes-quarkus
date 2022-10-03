@@ -7,3 +7,9 @@ jobs:
     steps:
       - name: Checkout the code
         uses: actions/checkout@master
+      - name: Upload native executable
+        uses: actions/upload-artifact@v1
+        with:
+          name: native-executable
+          path: app-runner
+        
