@@ -17,6 +17,7 @@ jobs:
         uses: actions/download-artifact@v1
         with:
           name: build
+          path: build
       - name: Dockerize
         id: dockerize
         uses: maxday/quarkus-dockerize-action@master
