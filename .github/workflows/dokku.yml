@@ -3,9 +3,9 @@ name: Deploy to Dokku - production
 on: [push]
 
 env:
-  DOKKU_HOST: '18.216.231.73'
+  DOKKU_HOST: '52.15.212.169'
   DOKKU_APP_NAME: 'meira-filmes'
-  DOKKU_REMOTE_BRANCH: 'master'
+  DOKKU_REMOTE_BRANCH: 'main'
 
 jobs:
   deploy:
