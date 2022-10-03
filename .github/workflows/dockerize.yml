@@ -1,1 +1,25 @@
+name: Dockerize
 
+on:
+  workflow_run:
+    workflows: ['Build']
+    types:
+      - completed
+
+jobs:
+  dockerize:
+    runs-on: ubuntu-latest
+    name: Embed the native executable in a Docker container
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@master
+      - name: Download the binary
+        uses: actions/download-artifact@v1
+        with:
+          name: native-executable
+      - name: Dockerize
+        id: dockerize
+        uses: maxday/quarkus-dockerize-action@master
+        with:
+          tag: gcr.io/${{ secrets.GCP_PROJECT }}/${{ secrets.GCP_APP_NAME }}
+          executablePath: native-executable/app-runner
